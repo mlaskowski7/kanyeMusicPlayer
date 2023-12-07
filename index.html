@@ -5,18 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kanye West Music Player | mlaskowski7</title>
     <link rel="icon" type="image/png" href="img/PageIcon.png">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"/>
+    <script src="https://kit.fontawesome.com/e03b286a27.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="player-container">
+
         <!-- Song -->
         <div class="img-container">
             <img src="img/song1.jpg" alt="Heaven and Hell - Kanye West">
         </div>
         <h2 id="title">Heaven and Hell</h2>
         <h3 id="artist">Kanye West</h3>
-        <audio src="music/song1.mp3" controls></audio>
+        <audio src="music/song1.mp3"></audio>
+
+        <!-- Progress Bar -->
+        <div class="progress-container" id="progress-container">
+            <div class="progress" id="progress"></div>  
+            <div class="duration-wrapper">
+                <span id="current-time">0:00</span>
+                <span id="duration">2:38</span>
+            </div>
+        </div>
+
+        <!-- Controls -->
+        <div class="player-controls">
+            <i class="fa-solid fa-backward" id="prev" title="Previous"></i>
+            <i class="fa-solid fa-play main-button" id="play" title="Play"></i>
+            <i class="fa-solid fa-forward" id="next" title="Next"></i>
+        </div>
+
     </div>
 
     <!-- Script -->
